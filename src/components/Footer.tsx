@@ -5,7 +5,7 @@ import { Instagram, Linkedin, Heart, Youtube } from 'lucide-react';
 const Footer: React.FC = () => {
   return (
     <footer className="relative z-10 py-8 px-6 bg-black/30 backdrop-blur-sm border-t border-express-purple/20">
-      <div className="container mx-auto">
+      <div className="container mx-auto flex-col">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="text-center md:text-left">
             <p className="text-gray-400 text-sm">
@@ -13,7 +13,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
           
-          <div className="flex items-center space-x-4">
+          <div className="mr-11 flex items-center space-x-4 gap-10  ">
             <a 
               href="https://www.instagram.com/djsce.express/"
               target="_blank"

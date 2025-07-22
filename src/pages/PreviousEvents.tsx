@@ -9,18 +9,9 @@ import {
 // Import event images
 import p1 from '../images/pil/p1.png';
 import p2 from '../images/pil/p2.jpg';
-import p3 from '../images/pil/p3.jpg';
 import i1 from '../images/illuminare/i1.jpg';
 import i2 from '../images/illuminare/i2.jpg';
 import i3 from '../images/illuminare/i3.jpeg';
-import a1 from '../images/aryavarta/a1.jpg';
-import a2 from '../images/aryavarta/a2.png';
-import a3 from '../images/aryavarta/a3.jpg';
-import c1 from '../images/court/c1.png';
-import c2 from '../images/court/c2.jpeg';
-import c3 from '../images/court/c3.jpg';
-import t1 from '../images/tick/t1.png';
-
 interface EventImage {
   src: string;
   alt: string;

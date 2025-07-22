@@ -56,10 +56,12 @@ const Index: React.FC = () => {
               alt="DJS eXpress" 
               className="w-64 h-auto mx-auto"
             />
+            <p className='font-semibold font-serif text-4xl'>#Express to Inspire</p>
+            <h2 className='pt-10 text-2xl '>Upcoming Events: </h2> 
           </div>
           
           {/* Sherlock Holmes Carousel */}
-          <div className="w-full max-w-4xl mb-8">
+          <div className="w-full max-w-4xl mb-8 p-5">
             <Carousel 
               className="w-full"
               setApi={setApi}
@@ -100,7 +102,7 @@ const Index: React.FC = () => {
             <blockquote className="text-sherlock-parchment/90 text-lg italic font-light leading-relaxed">
               "When you have eliminated the impossible, whatever remains, however improbable, must be the truth."
             </blockquote>
-            <cite className="text-sherlock-gold text-sm mt-2 block">— Sherlock Holmes</cite>
+            <cite className="text-sherlock-gold text-sm mt-2 block mb-10">— Sherlock Holmes</cite>
           </div>
         </div>
       </div>
