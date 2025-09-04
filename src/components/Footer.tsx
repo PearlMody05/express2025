@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             </p>
           </div>
           
-          <div className="flex items-center space-x-4">
+          <div className="mr-11 flex items-center space-x-4 gap-10  ">
             <a 
               href="https://www.instagram.com/djsce.express/"
               target="_blank"

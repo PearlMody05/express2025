@@ -114,14 +114,14 @@
     --sherlock-fog: 210 15% 50%;
     --sherlock-shadow: 270 50% 30%;
 
-    --sidebar-background: 35 20% 10%;
-    --sidebar-foreground: 40 10% 75%;
-    --sidebar-primary: 45 85% 60%;
-    --sidebar-primary-foreground: 35 25% 8%;
-    --sidebar-accent: 35 15% 18%;
-    --sidebar-accent-foreground: 40 10% 85%;
-    --sidebar-border: 35 20% 25%;
-    --sidebar-ring: 45 85% 60%;
+      --sidebar-background: 35 20% 10%;
+      --sidebar-foreground: 40 10% 75%;
+      --sidebar-primary: 45 85% 60%;
+      --sidebar-primary-foreground: 35 25% 8%;
+      --sidebar-accent: 35 15% 18%;
+      --sidebar-accent-foreground: 40 10% 85%;
+      --sidebar-border: 35 20% 25%;
+      --sidebar-ring: 45 85% 60%;
   }
 
   .dark {
@@ -210,7 +210,10 @@
     box-shadow: 0 8px 32px hsl(var(express-purple) / 0.3);
   }
 }
-
+@Theme {
+  --font-merriweather: 'Merriweather', serif;
+  --font-inter: 'Inter', sans-serif; 
+}
 .particle {
   position: absolute;
   border-radius: 50%;

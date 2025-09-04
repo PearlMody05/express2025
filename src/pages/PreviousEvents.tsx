@@ -9,7 +9,6 @@ import {
 // Import event images
 import p1 from '../images/pil/p1.png';
 import p2 from '../images/pil/p2.jpg';
-import p3 from '../images/pil/p3.jpg';
 import i1 from '../images/illuminare/i1.jpg';
 import i2 from '../images/illuminare/i2.jpg';
 import i3 from '../images/illuminare/i3.jpeg';
