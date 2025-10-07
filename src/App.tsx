@@ -12,8 +12,8 @@ import PreviousEvents from "./pages/PreviousEvents";
 import Team from "./pages/Team";
 import Expresso from "./pages/Expresso";
 import Contact from "./pages/Contact";
+import Certificates from "./pages/Certificates"; // Import the new page
 import NotFound from "./pages/NotFound";
-
 
 const queryClient = new QueryClient();
 
@@ -33,6 +33,7 @@ const App = () => (
             <Route path="/team" element={<Team />} />
             <Route path="/expresso" element={<Expresso />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/certificates" element={<Certificates />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />

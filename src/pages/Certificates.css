@@ -1,0 +1,290 @@
+/* Import a font (optional, but recommended for this style) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Starry background effect for the main container */
+.certificate-container {
+  min-height: 100vh;
+  background-color: #000000; /* A deep purple-black */
+  color: #e0e0e0;
+  font-family: "Poppins", sans-serif;
+  /* Star particle effect */
+  background-image: radial-gradient(
+      1px 1px at 20px 30px,
+      #eee,
+      rgba(0, 0, 0, 0)
+    ),
+    radial-gradient(1px 1px at 40px 70px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 50px 160px, #ddd, rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 90px 40px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1px 1px at 130px 80px, #fff, rgba(0, 0, 0, 0)),
+    radial-gradient(1.5px 1.5px at 160px 120px, #ddd, rgba(0, 0, 0, 0));
+  background-repeat: repeat;
+  background-size: 200px 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+/* Main glassmorphism card */
+.certificate-card {
+  background: rgba(18, 5, 41, 0.6); /* Semi-transparent dark purple */
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(167, 139, 250, 0.3);
+  border-radius: 20px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 0 30px rgba(139, 92, 246, 0.2);
+  max-width: 1000px;
+  width: 100%;
+  transition: box-shadow 0.3s ease;
+}
+
+.certificate-card:hover {
+  box-shadow: 0 0 45px rgba(139, 92, 246, 0.3);
+}
+
+/* Form Header */
+.form-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.main-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.subtitle {
+  color: #a78bfa; /* Light purple */
+  font-weight: 500;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group label {
+  font-size: 0.9rem;
+  color: #d1d5db; /* Light gray */
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 500;
+}
+
+.form-group select,
+.form-group input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border: 1px solid #4c1d95; /* Darker purple border */
+  border-radius: 10px;
+  background: rgba(24, 11, 48, 0.7); /* Dark input background */
+  font-size: 1rem;
+  color: #e0e0e0;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.form-group select:focus,
+.form-group input:focus {
+  border-color: #a78bfa;
+  box-shadow: 0 0 0 3px rgba(167, 139, 250, 0.25);
+}
+
+/* Style for the select dropdown arrow */
+.form-group select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg fill="white" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+}
+
+/* Button */
+.submit-btn {
+  background: transparent;
+  color: #c4b5fd; /* Light purple text */
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0.9rem;
+  border: 2px solid #a78bfa;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover:not(:disabled) {
+  background: #a78bfa;
+  color: #1e1b4b; /* Dark purple for text */
+  box-shadow: 0 0 20px rgba(167, 139, 250, 0.5);
+}
+
+.submit-btn:disabled {
+  border-color: #58516f;
+  color: #797193;
+  cursor: not-allowed;
+}
+
+.submit-btn:active {
+  margin-top: 10vh;
+}
+
+/* Spinner */
+.spinner-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.spinner {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(167, 139, 250, 0.4);
+  border-top-color: #c4b5fd;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Error message */
+.error-message {
+  text-align: center;
+  color: #fca5a5; /* Light red */
+  background: rgba(153, 27, 27, 0.3); /* Dark, transparent red */
+  border: 1px solid rgba(220, 38, 38, 0.5);
+  padding: 0.8rem;
+  border-radius: 10px;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+/* Certificate view */
+.certificate-view {
+  margin-top: 2rem;
+  border: 1px solid #4c1d95;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 650px; /* Adjusted height */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.certificate-frame {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+.certificate-card.certificate-generated {
+  margin-top: 10vh;
+  transition: margin-top 0.4s ease;
+}
+
+/* ------------------- RESPONSIVENESS ------------------- */
+
+/* Tablets and below (≤1024px) */
+@media (max-width: 1024px) {
+  .certificate-card {
+    max-width: 90%;
+    padding: 2rem 2.5rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+
+  .certificate-view {
+    height: 550px;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .certificate-container {
+    padding: 1.5rem;
+  }
+
+  .certificate-card {
+    padding: 1.8rem 1.5rem;
+    border-radius: 15px;
+  }
+
+  .main-title {
+    font-size: 1.75rem;
+  }
+
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .form-group label {
+    font-size: 0.85rem;
+  }
+
+  .form-group select,
+  .form-group input {
+    padding: 0.7rem 0.9rem;
+    font-size: 0.95rem;
+  }
+
+  .submit-btn {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .certificate-view {
+    height: 400px;
+  }
+}
+
+/* Small Mobile (≤480px) */
+@media (max-width: 480px) {
+  .certificate-container {
+    padding: 1rem;
+  }
+
+  .certificate-card {
+    padding: 1.5rem;
+  }
+
+  .main-title {
+    font-size: 1.5rem;
+  }
+
+  .subtitle {
+    font-size: 0.85rem;
+  }
+
+  .form-group select,
+  .form-group input {
+    font-size: 0.9rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .submit-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+
+  .certificate-view {
+    height: 350px;
+  }
+}
