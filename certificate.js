@@ -6,7 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
   downloadBtn.disabled = true;
 
   const img = new Image();
-  img.src = "./src/images/certificate.png";
+  img.src = "./public/assets/cer.png";
   img.onload = () => {
     ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
