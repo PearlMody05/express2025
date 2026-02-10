@@ -126,10 +126,15 @@ const Index: React.FC = () => {
         </div>
         {/* Call to Action */}
         <div className="mt-4">
-          <Link to="/upcoming-events" className="sherlock-button group">
-            <span className="font-semibold tracking-wider">Know More</span>
-            <ChevronRight size={16} className="ml-2 transition-transform group-hover:translate-x-1" />
-          </Link>
+        <a
+         href="https://forms.gle/skijFZar1szrdmLv7"
+          target="_blank" 
+          rel="noopener noreferrer"
+           className="sherlock-button group inline-flex items-center"
+        >
+          <span className="font-semibold tracking-wider">Register Now</span>
+          <ChevronRight className="ml-2 transition-transform group-hover:translate-x-1" />
+        </a>
         </div>
 
         <div className="text-center text-foreground mt-8">
